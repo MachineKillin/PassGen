@@ -96,6 +96,7 @@ amount = int(input('passwords: '))
 with ThreadPoolExecutor() as executor:
     results = executor.submit(generate_passwords, amount).result()
 
+open("passwords.txt", "x")
 with open('passwords.txt', "a", encoding="utf-8") as file:
     for password in results:
         file.write(password + '\n')
