@@ -1,5 +1,5 @@
 # PassGen
-Extremely fast python realistic password list generator.
+Extremely fast realistic password list generator.
 
 ## Installing
 ```
